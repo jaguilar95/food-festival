@@ -47,5 +47,12 @@ module.exports = {
       analyzerMode: "static",
     }),
   ],
+  devServer: {
+    static: {
+      directory: path.join(__dirname, "./"),
+    },
+    compress: true,
+    port: 8080,
+  },
   mode: "development",
 };
